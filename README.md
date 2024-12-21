@@ -41,6 +41,11 @@ sudo apt update && sudo apt upgrade -y && \
 sudo apt-get install --install-recommends linux-generic-hwe-22.04 -y && \
 sudo apt autoremove --purge -y && \
 sudo apt-get install iptables iptables-persistent -y && \
+sudo iptables -P INPUT ACCEPT && \
+sudo iptables -P OUTPUT ACCEPT && \
+sudo iptables -F INPUT && \
+sudo iptables -F OUTPUT && \
+sudo netfilter-persistent save && \
 sudo reboot
 ```
 > check up to date of kernel
