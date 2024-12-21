@@ -15,7 +15,7 @@ What is Atlas? Atlas Network is a permissionless, decentralized node orchestrati
 **1. Hardware Requirements**
 
 > [!CAUTION]
-> `Machine is very sensitive compiling services tools, In order to run Atlas node, its need a server recommended specs`
+> `Atlas for machine is very sensitive compilation services tools, in order to run Atlas node, its need a server recommended specs`
 
 | Requirement                      | Details                                   |
 |----------------------------------|-------------------------------------------|
@@ -27,13 +27,6 @@ What is Atlas? Atlas Network is a permissionless, decentralized node orchestrati
 | Internet service                 | 1Gbps unlimited network bandwidth         |
 | Drivers                          | Kernel >6.1-Latest, incl-latest security     |
 
-
-
-
-sign up now https://testnet.atlasnetwork.xyz/refer/1cGToWb
-search your machines node with id or paste any address wallet : https://explorer.atlasnetwork.xyz/machine
-
-> [!TIP]
 > Do this before you start. If you can't see any **failed pending, or stuck** provider machine setup, run this.
 
 ```
@@ -62,6 +55,13 @@ sudo ufw disable
 ```
 sudo ufw enable
 ```
+
+
+
+
+sign up now https://testnet.atlasnetwork.xyz/refer/1cGToWb
+search your machines node with id or paste any address wallet : https://explorer.atlasnetwork.xyz/machine
+
 
 delete and update service of atlasnetwork-provider.service
 
