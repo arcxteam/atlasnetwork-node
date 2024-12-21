@@ -38,6 +38,8 @@ sudo iptables -P INPUT ACCEPT && \
 sudo iptables -P OUTPUT ACCEPT && \
 sudo iptables -F INPUT && \
 sudo iptables -F OUTPUT && \
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT && \
+sudo iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT && \
 sudo netfilter-persistent save && \
 sudo reboot
 ```
