@@ -1,4 +1,31 @@
-# atlasnetwork-node
+# A Complete Guide - Run Atlas Network Node as Provider
+
+What is Atlas? Atlas Network is a permissionless, decentralized node orchestration layer for blockchains, apps, and protocols. At this like DePin orchestration layer.
+
+## Here We Go...GAS 
+
+**`Is there incentivized?` ![Confirm](https://img.shields.io/badge/confirm-yes-brightgreen)**
+
+> [!IMPORTANT]
+> **FAQs**: Atlas Network is thrilled to announce the launch of its **Incentivized Testnet** a major milestone in our journey to reshape DePIN orchestration. Wave Two Points Program is here as **Early Access**, **Impact: Contribute**, and **Rewards Galore: Earn NPs (NODE POINTs)**. Each participant will find step-by-step guides in the Marketplace to help them get started and make the most of their contributions see here to all [FAQs](https://docs.atlasnetwork.dev/docs/Navigate%20Quests/FAQ) or on [Twitter](https://x.com/BuildOnAtlas/status/1869028708704456818)
+
+---
+
+## 1. Preparation/Prerequisites - Run Atlas Network Node
+**1. Hardware Requirements**
+
+> [!CAUTION]
+> `Machine is very sensitive compiling services tools, In order to run Atlas node, its need a server recommended specs`
+
+| Requirement                      | Details                                   |
+|----------------------------------|-------------------------------------------|
+| Services                         | Full root, firewall allow all ports        |
+| RAM/Memory                       | 4 GB - Up                                    |
+| CPU/vCPU                         | 2 Cores - Up                                |
+| Storage Space                    | 80 GB - Up                                   |
+| Supported OS Linux               | Ubuntu >22.04 Up & Debian >12 Up          |
+| Internet service                 | 1Gbps unlimited network bandwidth         |
+| Drivers                          | Kernel >6.1-Latest, incl-latest security     |
 
 
 
@@ -6,7 +33,8 @@
 sign up now https://testnet.atlasnetwork.xyz/refer/1cGToWb
 search your machines node with id or paste any address wallet : https://explorer.atlasnetwork.xyz/machine
 
-Do this before you start. If you can't see any *failed pending, or stuck* provider machine setup, run this.
+> [!TIP]
+> Do this before you start. If you can't see any **failed pending, or stuck** provider machine setup, run this.
 
 ```
 sudo apt update && sudo apt upgrade -y && \
@@ -15,6 +43,12 @@ sudo apt autoremove --purge -y && \
 sudo apt-get install iptables iptables-persistent -y && \
 sudo reboot
 ```
+> check up to date of kernel
+```diff
+- sudo uname -r
+> output version: >6.xxxx or 6.8.0-50-generic
+```
+
 > and then, temporary (1) disable --> (2) enable, after active machines run
 ```
 sudo ufw disable
