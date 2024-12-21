@@ -6,7 +6,7 @@
 sign up now https://testnet.atlasnetwork.xyz/refer/1cGToWb
 search your machines node with id or paste any address wallet : https://explorer.atlasnetwork.xyz/machine
 
-run this before starting, if can been view any failed/pending/stuck for provider machine setup.
+Do this before you start. If you can't see any *failed pending, or stuck* provider machine setup, run this.
 
 ```
 sudo apt update && sudo apt upgrade -y && \
