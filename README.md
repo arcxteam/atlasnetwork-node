@@ -6,11 +6,14 @@
 sign up now https://testnet.atlasnetwork.xyz/refer/1cGToWb
 search your machines node with id or paste any address wallet : https://explorer.atlasnetwork.xyz/machine
 
-run this before new install
+run this before starting, if can been view any failed/pending/stuck for provider machine setup.
 
 ```
-sudo apt update && sudo apt upgrade -y 
-sudo apt-get install iptables iptables-persistent
+sudo apt update && sudo apt upgrade -y && \
+sudo apt-get install --install-recommends linux-generic-hwe-22.04 -y && \
+sudo apt autoremove --purge -y && \
+sudo apt-get install iptables iptables-persistent -y && \
+sudo reboot
 ```
 > and then, temporary (1) disable --> (2) enable, after active machines run
 ```
