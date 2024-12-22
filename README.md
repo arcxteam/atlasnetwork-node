@@ -15,7 +15,7 @@ What is Atlas? Atlas Network is a permissionless, decentralized node orchestrati
 **1. Hardware Requirements**
 
 > [!CAUTION]
-> Atlas for machine is very `sensitive config/compilation services tools`, in order to run Atlas node, its need a server recommended specs
+> Atlas machine is have very `sensitive config/compilation services tools`, in order to run Atlas Node, its need a server recommended specs
 
 | Requirement                      | Details                                   |
 |----------------------------------|-------------------------------------------|
