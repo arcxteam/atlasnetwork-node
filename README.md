@@ -15,11 +15,11 @@ What is Atlas? Atlas Network is a permissionless, decentralized node orchestrati
 **1. Hardware Requirements**
 
 > [!CAUTION]
-> `Atlas for machine is very sensitive compilation services tools, in order to run Atlas node, its need a server recommended specs`
+> Atlas for machine is very `sensitive compilation services tools`, in order to run Atlas node, its need a server recommended specs
 
 | Requirement                      | Details                                   |
 |----------------------------------|-------------------------------------------|
-| Services                         | Full root, firewall allow all ports        |
+| Services                         | Full root, firewall allow out/ingoing all traffic  |
 | RAM/Memory                       | 4 GB - Up                                    |
 | CPU/vCPU                         | 2 Cores - Up                                |
 | Storage Space                    | 80 GB - Up                                   |
@@ -27,7 +27,8 @@ What is Atlas? Atlas Network is a permissionless, decentralized node orchestrati
 | Internet service                 | 1Gbps unlimited network bandwidth         |
 | Drivers                          | Kernel >6.1-Latest, incl-latest security     |
 
-> Do this before you start. If you can't see any **failed pending, or stuck** provider machine setup, run this.
+> [!CAUTION]
+> Do this before you start, if u not get machines are `suspended, failed are pending/stuck etc` provider machine setup, check run this.
 
 ```
 sudo apt update && sudo apt upgrade -y && \
