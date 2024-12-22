@@ -15,7 +15,7 @@ What is Atlas? Atlas Network is a permissionless, decentralized node orchestrati
 **1. Hardware Requirements**
 
 > [!CAUTION]
-> Atlas for machine is very `sensitive compilation services tools`, in order to run Atlas node, its need a server recommended specs
+> Atlas for machine is very `sensitive config/compilation services tools`, in order to run Atlas node, its need a server recommended specs
 
 | Requirement                      | Details                                   |
 |----------------------------------|-------------------------------------------|
@@ -28,7 +28,7 @@ What is Atlas? Atlas Network is a permissionless, decentralized node orchestrati
 | Drivers                          | Kernel >6.1-Latest, incl-latest security     |
 
 > [!CAUTION]
-> Do this before you start, if u not get machines are `suspended, failed are pending/stuck etc` provider machine setup, check run this.
+> Do this before you start, if you don't want get machine to `suspended, failed, pending/stuck etc`, at provider node. plz run this.
 
 ```
 sudo apt update && sudo apt upgrade -y && \
@@ -44,20 +44,30 @@ sudo iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT && \
 sudo netfilter-persistent save && \
 sudo reboot
 ```
-> check up to date of kernel
+**and too**
+
+```
+sudo apt update && sudo apt upgrade -y && \
+sudo apt install ufw -y && \
+sudo ufw allow ssh && \
+sudo ufw default allow incoming && \
+sudo ufw default allow outgoing && \
+sudo ufw enable && \
+sudo ufw reload && \
+sudo ufw status verbose
+```
+
+> check up to date of **kernel adn ufw status**
 ```diff
 - sudo uname -r
 > output version: >6.xxxx or 6.8.0-50-generic
+- sudo ufw status verbose
+> Status: active
+> Logging: on (low)
+> Default: allow (incoming), allow (outgoing), deny (routed)
+> New profiles: skip
 ```
 
-> and then, temporary (1) disable --> (2) enable, after active machines run
-```
-sudo ufw disable
-```
-
-```
-sudo ufw enable
-```
 
 
 
