@@ -1,3 +1,6 @@
+![Testnet Node - Full Guides cover (3)](https://github.com/user-attachments/assets/89b2b17a-d361-4fb8-accd-0af75a2dfeef)
+
+
 # A Complete Guide - Run Atlas Network Node as Provider
 
 What is Atlas? Atlas Network is a permissionless, decentralized node orchestration layer for blockchains, apps, and protocols. At this like DePin orchestration layer.
