@@ -92,7 +92,7 @@ sudo ufw status verbose
 - Copy command after the success sign-tx, into your terminal ssh
 > curl -L https://get.atlasnetwork.dev | sh -s - xWm9nyjUy6KpZaJOHEFehVtvbut0QxFCx5GTF4pCXzsojhdN3bRZjktL41d47AAP
 ```
-- In dashboard for a view step like ![Step](https://img.shields.io/badge/not_yet_set-brightgreen)
+- In dashboard for a view step like ![Step](https://img.shields.io/badge/configuring-brown) > ![Step](https://img.shields.io/badge/AWAITING.STAKE-brightgreen)
 
 
 
