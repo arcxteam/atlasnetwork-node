@@ -93,7 +93,7 @@ sudo ufw status verbose
 - Copy command after the success sign-tx, into your terminal ssh
 > curl -L https://get.atlasnetwork.dev | sh -s - xWm9nyjUy6KpZaJOHEFehVtvbut0QxFCx5GTF4pCXzsojhdN3bRZjktL41d47AAP
 ```
-- Back into provider-dashboard for a view step like ![Step](https://img.shields.io/badge/CONFIGURING-brown) > ![Step](https://img.shields.io/badge/AWAITING_STAKE-brown) > ![Step](https://img.shields.io/badge/ACTIVE-brightgreen)
+- Back into provider-dashboard for a view step like ![Step](https://img.shields.io/badge/CONFIGURING-brown) | ![Step](https://img.shields.io/badge/AWAITING_STAKE-brown) | ![Step](https://img.shields.io/badge/ACTIVE-brightgreen)
 
 > Important; Early Offer: You don't need any NODE tokens, just click on **Stake One machine per day**
 
@@ -106,10 +106,18 @@ sudo ufw status verbose
 - Complete to all setting account & task if you need
 
 
-**2. Status Running / Provider Machines
+**2. Status Provider Running**
 
-- Search machines node with id or paste any address wallet: https://explorer.atlasnetwork.xyz/machine
-- 
+`Search machine details and workloads uptime`
+
+- For searching **machine name** anyone can copy paste any SIGN address wallet https://explorer.atlasnetwork.xyz/machine
+- Uptime : last checked : less than a minute ago ; **GOOD (100%)** The overall health of your machine is good, you've had zero errors in the last 24 hours.
+
+## 4. Usefull Command Logs
+**1. 
+
+- Check status Atlas `sudo systemctl status atlasnetwork-provider.service`
+- Check info logs Atlas `sudo journalctl -u atlasnetwork-provider.service`
 
 delete and update service of atlasnetwork-provider.service
 
