@@ -74,19 +74,28 @@ sudo ufw status verbose
 
 `Which chain does Atlas testnet support? ARB Sepolia Testnet`
 - Arbitrum Sepolia ETH
-- Need some ETH testnet go to bridge Sepolia ETH or faucet
+- Need some ETH testnet go to [bridge official](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia) Sepolia ETH or googling faucet
 - Change RPC network for ARB Sepolia ETH, use it `https://arbitrum-sepolia.drpc.org`
 
-
-
+## 2. Installation - Run Atlas Network Node
 **1. Atlas Network Dashboard**
-- I appreciate you joining through my link for Atlas Network [![Dashboard](https://img.shields.io/badge/CLICK-DASHBOARD-8a2be2)](https://testnet.atlasnetwork.xyz/refer/1cGToWb)
-- Try focussing on task node running **
+
+- First; I appreciate to joining through my link for Atlas Network [![Dashboard](https://img.shields.io/badge/HERE-DASHBOARD-8a2be2)](https://testnet.atlasnetwork.xyz/refer/1cGToWb)
+- Second; Complete go to faucet & focus on task node run **provider machine** and *add machine* to other take action
+- Third; For provider is here https://testnet-providers.atlasnetwork.xyz/ go to add machine
+- Plz, if you first time `add 1 machine`
+- Setup provider > sign transaction > copy command to your terminal ssh
+
+**2. Run the Command**
+```diff
+- This example cmd > copy command after was success sign-tx, into your terminal ssh
+> curl -L https://get.atlasnetwork.dev | sh -s - xWm9nyjUy6KpZaJOHEFehVtvbut0QxFCx5GTF4pCXzsojhdN3bRZjktL41d47AAP
+```
+- In dashboard for a view step 
 
 
 
 
-sign up now https://testnet.atlasnetwork.xyz/refer/1cGToWb
 search your machines node with id or paste any address wallet : https://explorer.atlasnetwork.xyz/machine
 
 
