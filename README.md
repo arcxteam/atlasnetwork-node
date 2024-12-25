@@ -70,7 +70,18 @@ sudo ufw status verbose
 > Default: allow (incoming), allow (outgoing), deny (routed)
 > New profiles: skip
 ```
+**2. Setup for Network**
 
+`Which chain does Atlas testnet support? ARB Sepolia Testnet`
+- Arbitrum Sepolia ETH
+- Need some ETH testnet go to bridge Sepolia ETH or faucet
+- Change RPC network for ARB Sepolia ETH, use it `https://arbitrum-sepolia.drpc.org`
+
+
+
+**1. Atlas Network Dashboard**
+- I appreciate you joining through my link for Atlas Network [![Dashboard](https://img.shields.io/badge/CLICK-DASHBOARD-8a2be2)](https://testnet.atlasnetwork.xyz/refer/1cGToWb)
+- Try focussing on task node running **
 
 
 
