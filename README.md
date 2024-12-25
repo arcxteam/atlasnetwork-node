@@ -78,14 +78,14 @@ sudo ufw status verbose
 - Change RPC network for ARB Sepolia ETH, use it `https://arbitrum-sepolia.drpc.org`
 
 ## 2. Installation - Run Atlas Network Node
-**1. Atlas Network Dashboard**
+**1. Atlas Provider Dashboard**
 
 - I appreciate to SIGNUP through my link for Atlas Network [![Dashboard](https://img.shields.io/badge/HERE-DASHBOARD-8a2be2)](https://testnet.atlasnetwork.xyz/refer/1cGToWb)
 - Complete go to faucet & focus on task node run **provider machine** and **add machine** to other take action
 - For provider is here https://testnet-providers.atlasnetwork.xyz/ go to add machine
 - Plz, if you first time `add 1 machine`
 - Setup provider > staking > sign transaction > copy command to your terminal ssh
-- If having many **failed tx** try tomorrow or try a fresh wallet with first **SIGNUP** and clear cache/cookies only Atlas
+- If having many **failed tx** try tomorrow or try a fresh wallet with the first **SIGNUP** again & clear cache/cookies Atlas only
 
 **2. Run the Command**
 ```diff
@@ -93,14 +93,23 @@ sudo ufw status verbose
 - Copy command after the success sign-tx, into your terminal ssh
 > curl -L https://get.atlasnetwork.dev | sh -s - xWm9nyjUy6KpZaJOHEFehVtvbut0QxFCx5GTF4pCXzsojhdN3bRZjktL41d47AAP
 ```
-- Back into dashboard for a view step like ![Step](https://img.shields.io/badge/CONFIGURING-pullmanbrown) > ![Step](https://img.shields.io/badge/AWAITING_STAKE-brown) > ![Step](https://img.shields.io/badge/ACTIVE-brightgreen)
+- Back into provider-dashboard for a view step like ![Step](https://img.shields.io/badge/CONFIGURING-brown) > ![Step](https://img.shields.io/badge/AWAITING_STAKE-brown) > ![Step](https://img.shields.io/badge/ACTIVE-brightgreen)
 
-> Important; `Early Offer: You don't need any NODE tokens, just click on **Stake One machine per day**`
+> Important; Early Offer: You don't need any NODE tokens, just click on **Stake One machine per day**
+
+## 3. Verifying Task & Status Running
+**1. Atlas Main-Dashboard**
+
+`Back into main-dashboard for a complete task`
+
+- Verify task scroll **add a machine** and **register as compute provider**
+- Complete to all setting account & task if you need
 
 
+**2. Status Running / Provider Machines
 
-search your machines node with id or paste any address wallet : https://explorer.atlasnetwork.xyz/machine
-
+- Search machines node with id or paste any address wallet: https://explorer.atlasnetwork.xyz/machine
+- 
 
 delete and update service of atlasnetwork-provider.service
 
