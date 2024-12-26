@@ -22,7 +22,7 @@ What is Atlas? Atlas Network is a permissionless, decentralized node orchestrati
 
 | Requirement                      | Details                                   |
 |----------------------------------|-------------------------------------------|
-| Services                         | Full root, firewall allow out/ingoing all traffic  |
+| Services                         | Full **root**, firewall allow out/ingoing all **traffic**  |
 | RAM/Memory                       | 4 GB - Up                                    |
 | CPU/vCPU                         | 2 Cores - Up                                |
 | Storage Space                    | 80 GB - Up                                   |
@@ -80,7 +80,7 @@ sudo ufw status verbose
 ## 2. Installation - Run Atlas Network Node
 **1. Atlas Provider Dashboard**
 
-- I appreciate to SIGNUP through my link for Atlas Network [![Dashboard](https://img.shields.io/badge/HERE-DASHBOARD-8a2be2)](https://testnet.atlasnetwork.xyz/refer/1cGToWb)
+- I appreciate to `SIGNUP ACCOUNT` through my link click... [![Dashboard](https://img.shields.io/badge/HERE-DASHBOARD-8a2be2)](https://testnet.atlasnetwork.xyz/refer/1cGToWb)
 - Complete go to faucet & focus on task node run **provider machine** and **add machine** to other take action
 - For provider is here https://testnet-providers.atlasnetwork.xyz/ go to add machine
 - Plz, if you first time `add 1 machine`
@@ -93,34 +93,46 @@ sudo ufw status verbose
 - Copy command after the success sign-tx, into your terminal ssh
 > curl -L https://get.atlasnetwork.dev | sh -s - xWm9nyjUy6KpZaJOHEFehVtvbut0QxFCx5GTF4pCXzsojhdN3bRZjktL41d47AAP
 ```
-- Back into provider-dashboard for a view step like ![Step](https://img.shields.io/badge/CONFIGURING-brown) | ![Step](https://img.shields.io/badge/AWAITING_STAKE-brown) | ![Step](https://img.shields.io/badge/ACTIVE-brightgreen)
+- Go back to `provider-dashboard` for a view step like ![Step](https://img.shields.io/badge/CONFIGURING-brown) .. ![Step](https://img.shields.io/badge/AWAITING_STAKE-brown) ... ![Step](https://img.shields.io/badge/ACTIVE-brightgreen)
 
 > Important; Early Offer: You don't need any NODE tokens, just click on **Stake One machine per day**
+
+![Untitled (700 x 370 px)](https://github.com/user-attachments/assets/400a3f1d-1773-4884-bf08-72135d2e0f8a)
 
 ## 3. Verifying Task & Status Running
 **1. Atlas Main-Dashboard**
 
-`Back into main-dashboard for a complete task`
+`Go Back to main-dashboard for a complete task`
 
 - Verify task scroll **add a machine** and **register as compute provider**
 - Complete to all setting account & task if you need
-
 
 **2. Status Provider Running**
 
 `Search machine details and workloads uptime`
 
-- For searching **machine name** anyone can copy paste any SIGN address wallet https://explorer.atlasnetwork.xyz/machine
+- To search for a `machine name` anyone can copy/paste the SIGN address wallet into https://explorer.atlasnetwork.xyz/machine
 - Uptime : last checked : less than a minute ago ; **GOOD (100%)** The overall health of your machine is good, you've had zero errors in the last 24 hours.
 
+![Desktop-screenshot-12-21-2024_02_33_AM](https://github.com/user-attachments/assets/9b67444e-fdb6-45d3-98dc-313cf4aa6484)
+
+![Atlas-Provider-dashboard-12-21-2024_02_39_AM](https://github.com/user-attachments/assets/38972847-fe48-4bb0-a149-a3d5bf08cf47)
+
 ## 4. Usefull Command Logs
-**1. 
 
-- Check status Atlas `sudo systemctl status atlasnetwork-provider.service`
-- Check info logs Atlas `sudo journalctl -u atlasnetwork-provider.service`
-
-delete and update service of atlasnetwork-provider.service
-
+- Check status Atlas
+```
+sudo systemctl status atlasnetwork-provider.service
+```
+- Check info logs Atlas
+```
+sudo journalctl -u atlasnetwork-provider.service
+```
+- Check stopping run Atlas
+```
+sudo systemctl stop atlasnetwork-provider.service
+```
+- **warning** Check for delete/stop/clean/update service Atlas
 ```bash
 sudo systemctl stop atlasnetwork-provider.service && \
 sudo systemctl disable atlasnetwork-provider.service && \
@@ -130,22 +142,3 @@ sudo rm /usr/local/bin/atlasnetwork-provider && \
 sudo rm -rf /etc/atlasnetwork /var/lib/atlasnetwork && \
 sudo systemctl reset-failed
 ```
-
-Usefull CMD Logs
-
-- sudo journalctl -u atlasnetwork-provider.service
-- sudo systemctl status atlasnetwork-provider.service
-
-
-![Atlas-Provider-dashboard-12-21-2024_02_41_AM](https://github.com/user-attachments/assets/84d49746-4c3a-48c1-92ca-d63ca5aa50f1)
-
-![Atlas-Provider-dashboard-12-21-2024_02_40_AM](https://github.com/user-attachments/assets/1dfbd971-86f8-4846-9d04-79ce171b6c70)
-
-![Atlas-Provider-dashboard-12-21-2024_02_43_AM](https://github.com/user-attachments/assets/679480f9-df38-4823-a8d9-911d064e0ed0)
-
-![Atlas-Provider-dashboard-12-21-2024_02_39_AM](https://github.com/user-attachments/assets/38972847-fe48-4bb0-a149-a3d5bf08cf47)
-
-![Atlas-Provider-dashboard-12-21-2024_01_41_AM](https://github.com/user-attachments/assets/d37e41b4-10d0-4114-9806-fec015614cc9)
-
-![Desktop-screenshot-12-21-2024_02_33_AM](https://github.com/user-attachments/assets/9b67444e-fdb6-45d3-98dc-313cf4aa6484)
-
