@@ -96,7 +96,7 @@ sudo ufw status verbose
 
 > Important; Early Offer: You don't need any NODE tokens, just click on **Stake One machine per day**
 
-![0](https://github.com/user-attachments/assets/39875c0f-a640-4b9a-a4ce-6eeea52af60d)
+![Testnet Node - Full Guides cover (4)](https://github.com/user-attachments/assets/65ce470a-8568-4a7f-a8fc-4081900cc12e)
 
 ## 3. Verifying Task & Status Running
 **1. Atlas Main-Dashboard**
