@@ -1,6 +1,5 @@
 ![Testnet Node - Full Guides cover (3)](https://github.com/user-attachments/assets/89b2b17a-d361-4fb8-accd-0af75a2dfeef)
 
-
 # A Complete Guide - Run Atlas Network Node as Provider
 
 What is Atlas? Atlas Network is a permissionless, decentralized node orchestration layer for blockchains, apps, and protocols. At this like DePin orchestration layer.
@@ -97,7 +96,7 @@ sudo ufw status verbose
 
 > Important; Early Offer: You don't need any NODE tokens, just click on **Stake One machine per day**
 
-![Untitled (700 x 370 px)](https://github.com/user-attachments/assets/400a3f1d-1773-4884-bf08-72135d2e0f8a)
+![0](https://github.com/user-attachments/assets/39875c0f-a640-4b9a-a4ce-6eeea52af60d)
 
 ## 3. Verifying Task & Status Running
 **1. Atlas Main-Dashboard**
@@ -132,7 +131,7 @@ sudo journalctl -u atlasnetwork-provider.service
 ```
 sudo systemctl stop atlasnetwork-provider.service
 ```
-- **warning** Check for delete/stop/clean/update service Atlas
+- Check **warning** for delete/stop/clean/update service Atlas
 ```bash
 sudo systemctl stop atlasnetwork-provider.service && \
 sudo systemctl disable atlasnetwork-provider.service && \
