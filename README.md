@@ -127,6 +127,11 @@ sudo systemctl status atlasnetwork-provider.service
 ```
 sudo journalctl -u atlasnetwork-provider.service
 ```
+- Check info Restart Atlas
+```
+sudo systemctl restart atlasnetwork-provider.service
+```
+
 - Check stopping run Atlas
 ```
 sudo systemctl stop atlasnetwork-provider.service
