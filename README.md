@@ -46,7 +46,7 @@ sudo iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT && \
 sudo netfilter-persistent save && \
 sudo reboot
 ```
-**and too**
+**or using a UFW, install command with this**
 
 ```
 sudo apt update && sudo apt upgrade -y && \
@@ -113,7 +113,7 @@ sudo ufw status verbose
 - To search for a `machine name` anyone can copy/paste the SIGN address wallet into https://explorer.atlasnetwork.xyz/machine
 - Uptime : last checked : less than a minute ago ; **GOOD (100%)** The overall health of your machine is good, you've had zero errors in the last 24 hours.
 
-![Desktop-screenshot-12-21-2024_02_33_AM](https://github.com/user-attachments/assets/9b67444e-fdb6-45d3-98dc-313cf4aa6484)
+![Desktop-screenshot-02-13-2025_12_54_AM](https://github.com/user-attachments/assets/3f2bc7f7-dcef-42c8-8b35-a96f45cde233)
 
 ![Atlas-Provider-dashboard-12-21-2024_02_39_AM](https://github.com/user-attachments/assets/38972847-fe48-4bb0-a149-a3d5bf08cf47)
 
@@ -140,9 +140,9 @@ sudo systemctl stop atlasnetwork-provider.service
 ```bash
 sudo systemctl stop atlasnetwork-provider.service && \
 sudo systemctl disable atlasnetwork-provider.service && \
-sudo rm /etc/systemd/system/atlasnetwork-provider.service && \
+sudo rm -f /etc/systemd/system/atlasnetwork-provider.service && \
 sudo systemctl daemon-reload && \
-sudo rm /usr/local/bin/atlasnetwork-provider && \
-sudo rm -rf /etc/atlasnetwork /var/lib/atlasnetwork && \
+sudo rm -f /usr/local/bin/atlasnetwork-provider && \
+sudo rm -rf /etc/atlasnetwork /var/lib/atlasnetwork /root/.atlas-network && \
 sudo systemctl reset-failed
 ```
