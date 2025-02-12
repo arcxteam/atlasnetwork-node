@@ -1,6 +1,6 @@
 ![Testnet Node - Full Guides cover (3)](https://github.com/user-attachments/assets/89b2b17a-d361-4fb8-accd-0af75a2dfeef)
 
-# A Complete Guide - Run NodeOPS as Provider & (previously Atlas Network)
+# A Complete Guide - Run NodeOPS as Provider & Provers (previously Atlas Network)
 
 What is Atlas? Atlas Network is a permissionless, decentralized node orchestration layer for blockchains, apps, and protocols. At this like DePin orchestration layer.
 
@@ -50,7 +50,7 @@ fi && \
 sudo apt-get install --install-recommends $KERNEL_PACKAGE -y && \
 sudo apt autoremove --purge -y && \
 sudo apt install ufw -y && \
-sudo ufw default allow incoming && \
+sudo ufw default deny incoming && \
 sudo ufw default allow outgoing && \
 sudo ufw allow ssh && \
 sudo ufw allow 8472/udp && \
@@ -71,7 +71,7 @@ sudo ufw status verbose
 - sudo ufw status verbose
 > Status: active
 > Logging: on (low)
-> Default: allow (incoming), allow (outgoing), deny (routed)
+> Default: deny (incoming), allow (outgoing), deny (routed)
 > New profiles: skip
 ```
 **2. Setup for Network**
@@ -120,7 +120,8 @@ sudo ufw status verbose
 
 ![Desktop-screenshot-02-13-2025_12_54_AM](https://github.com/user-attachments/assets/3f2bc7f7-dcef-42c8-8b35-a96f45cde233)
 
-![Atlas-Provider-dashboard-12-21-2024_02_39_AM](https://github.com/user-attachments/assets/38972847-fe48-4bb0-a149-a3d5bf08cf47)
+![NodeOps-Provider-dashboard-02-13-2025_02_23_AM](https://github.com/user-attachments/assets/975102f0-bd55-4d62-817d-aeb961ab49e6)
+
 
 ## 4. Usefull Command Logs
 
