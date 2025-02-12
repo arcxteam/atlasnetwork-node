@@ -1,6 +1,6 @@
 ![Testnet Node - Full Guides cover (3)](https://github.com/user-attachments/assets/89b2b17a-d361-4fb8-accd-0af75a2dfeef)
 
-# A Complete Guide - Run Atlas Network Node as Provider
+# A Complete Guide - Run NodeOPS as Provider & (previously Atlas Network)
 
 What is Atlas? Atlas Network is a permissionless, decentralized node orchestration layer for blockchains, apps, and protocols. At this like DePin orchestration layer.
 
@@ -79,7 +79,7 @@ sudo ufw status verbose
 ## 2. Installation - Run Atlas Network Node
 **1. Atlas Provider Dashboard**
 
-- I appreciate to `SIGNUP ACCOUNT` through my link click... [![Dashboard](https://img.shields.io/badge/HERE-DASHBOARD-8a2be2)](https://testnet.atlasnetwork.xyz/refer/1cGToWb)
+- I appreciate to `SIGNUP ACCOUNT` through my link click... [![Dashboard](https://img.shields.io/badge/HERE-DASHBOARD-8a2be2)](https://testnet.nodeops.network/refer/mPaVx04)
 - Complete go to faucet & focus on task node run **provider machine** and **add machine** to other take action
 - For provider is here https://testnet-providers.atlasnetwork.xyz/ go to add machine
 - Plz, if you first time `add 1 machine`
