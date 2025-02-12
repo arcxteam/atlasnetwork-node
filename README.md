@@ -32,23 +32,9 @@ What is Atlas? Atlas Network is a permissionless, decentralized node orchestrati
 > [!CAUTION]
 > Do this before you start, if you don't want get machine to `suspended, failed, pending/stuck etc`, at provider node. plz run this.
 
-```bash
-sudo apt update && sudo apt upgrade -y && \
-sudo apt-get install --install-recommends linux-generic-hwe-22.04 -y && \
-sudo apt autoremove --purge -y && \
-sudo apt-get install iptables iptables-persistent -y && \
-sudo iptables -P INPUT ACCEPT && \
-sudo iptables -P OUTPUT ACCEPT && \
-sudo iptables -F INPUT && \
-sudo iptables -F OUTPUT && \
-sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT && \
-sudo iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT && \
-sudo netfilter-persistent save && \
-sudo reboot
-```
-**or using a UFW, install command with this**
+- Following for using **UFW firewall+upgrade kernel & port**, command this into ssh-terminal will redetect for system Ubuntu 20-22-24**
 
-```bash
+```
 sudo apt update -y && sudo apt upgrade -y && \
 UBUNTU_VERSION=$(lsb_release -rs | cut -d '.' -f1) && \
 if [ "$UBUNTU_VERSION" = "20" ]; then \
@@ -58,7 +44,7 @@ elif [ "$UBUNTU_VERSION" = "22" ]; then \
 elif [ "$UBUNTU_VERSION" = "24" ]; then \
   KERNEL_PACKAGE="linux-generic-hwe-24.04"; \
 else \
-  echo "Versi Ubuntu tidak didukung: $UBUNTU_VERSION"; \
+  echo "Versi Ubuntu Not Compatible: $UBUNTU_VERSION"; \
   exit 1; \
 fi && \
 sudo apt-get install --install-recommends $KERNEL_PACKAGE -y && \
@@ -78,8 +64,10 @@ sudo ufw status verbose
 
 > check up to date of **kernel adn ufw status**
 ```diff
+- command
 - sudo uname -r
 > output version: >6.xxxx or 6.8.0-50-generic
+- command
 - sudo ufw status verbose
 > Status: active
 > Logging: on (low)
