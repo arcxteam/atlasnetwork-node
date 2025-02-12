@@ -32,7 +32,7 @@ What is Atlas? Atlas Network is a permissionless, decentralized node orchestrati
 > [!CAUTION]
 > Do this before you start, if you don't want get machine to `suspended, failed, pending/stuck etc`, at provider node. plz run this.
 
-```
+```bash
 sudo apt update && sudo apt upgrade -y && \
 sudo apt-get install --install-recommends linux-generic-hwe-22.04 -y && \
 sudo apt autoremove --purge -y && \
@@ -48,12 +48,29 @@ sudo reboot
 ```
 **or using a UFW, install command with this**
 
-```
-sudo apt update && sudo apt upgrade -y && \
+```bash
+sudo apt update -y && sudo apt upgrade -y && \
+UBUNTU_VERSION=$(lsb_release -rs | cut -d '.' -f1) && \
+if [ "$UBUNTU_VERSION" = "20" ]; then \
+  KERNEL_PACKAGE="linux-generic-hwe-20.04"; \
+elif [ "$UBUNTU_VERSION" = "22" ]; then \
+  KERNEL_PACKAGE="linux-generic-hwe-22.04"; \
+elif [ "$UBUNTU_VERSION" = "24" ]; then \
+  KERNEL_PACKAGE="linux-generic-hwe-24.04"; \
+else \
+  echo "Versi Ubuntu tidak didukung: $UBUNTU_VERSION"; \
+  exit 1; \
+fi && \
+sudo apt-get install --install-recommends $KERNEL_PACKAGE -y && \
+sudo apt autoremove --purge -y && \
 sudo apt install ufw -y && \
-sudo ufw allow ssh && \
 sudo ufw default allow incoming && \
 sudo ufw default allow outgoing && \
+sudo ufw allow ssh && \
+sudo ufw allow 8472/udp && \
+sudo ufw allow 10250/tcp && \
+sudo ufw allow 51820/udp && \
+sudo ufw allow 51821/udp && \
 sudo ufw enable && \
 sudo ufw reload && \
 sudo ufw status verbose
