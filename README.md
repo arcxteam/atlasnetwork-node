@@ -1,23 +1,23 @@
 ![Testnet Node - Full Guides cover (3)](https://github.com/user-attachments/assets/89b2b17a-d361-4fb8-accd-0af75a2dfeef)
 
-# A Complete Guide - Run NodeOPS as Provider & Provers (previously Atlas Network)
+# A Complete Guide - Run NodeOps Network as Provider & Provers (previously Atlas Network)
 
-What is Atlas? Atlas Network is a permissionless, decentralized node orchestration layer for blockchains, apps, and protocols. At this like DePin orchestration layer.
+What is NodeOps Network? The leading chain-agnostic, AI-powered DePIN Orchestration layer for general-purpose compute, economically secured by Autonomous Verifiable Services (AVS). NodeOps Network provides the economic security to the DePIN compute powering all of NodeOps' products and services.
 
 ## Here We Go...GAS 
 
 **`Is there incentivized?` ![Confirm](https://img.shields.io/badge/confirm-yes-brightgreen)**
 
 > [!IMPORTANT]
-> **FAQs**: Atlas Network is thrilled to announce the launch of its **Incentivized Testnet** a major milestone in our journey to reshape DePIN orchestration. Wave Two Points Program is here as **Early Access**, **Impact: Contribute**, and **Rewards Galore: Earn NPs (NODE POINTs)**. Each participant will find step-by-step guides in the Marketplace to help them get started and make the most of their contributions see here to all [FAQs](https://docs.atlasnetwork.dev/docs/Navigate%20Quests/FAQ) or on [Twitter](https://x.com/BuildOnAtlas/status/1869028708704456818)
+> **FAQs**: NodeOps network (Atlas Network) is thrilled to announce the launch of its **Incentivized Testnet** a major milestone in our journey to reshape DePIN orchestration. Wave Two Points Program is here as **Early Access**, **Impact: Contribute**, and **Rewards Galore: Earn NPs (NODE POINTs)**. Each participant will find step-by-step guides in the Marketplace to help them get started and make the most of their contributions see here to all [FAQs](https://docs.atlasnetwork.dev/docs/Navigate%20Quests/FAQ) or [Twitter](https://x.com/BuildOnAtlas/status/1869028708704456818) & [Coinlist](https://coinlist.co/atlas-network-incentivized-testnet)
 
 ---
 
-## 1. Preparation/Prerequisites - Run Atlas Network Node
+## 1. Preparation/Prerequisites
 **1. Hardware Requirements**
 
 > [!CAUTION]
-> Atlas machine is have very `sensitive config/compilation services tools`, in order to run Atlas Node, its need a server recommended specs
+> NodeOps machine is have very `sensitive config/compilation services tools`, in order to run NodeOps, its need a server recommended specs
 
 | Requirement                      | Details                                   |
 |----------------------------------|-------------------------------------------|
@@ -27,12 +27,13 @@ What is Atlas? Atlas Network is a permissionless, decentralized node orchestrati
 | Storage Space                    | 80 GB - Up                                   |
 | Supported OS Linux               | Ubuntu >22.04 Up & Debian >12 Up          |
 | Internet service                 | 1Gbps unlimited network bandwidth         |
-| Drivers                          | Kernel >6.1-Latest, incl-latest security     |
+| Drivers                          | Kernel >6.1.x or new latest, include security     |
 
 > [!CAUTION]
-> Do this before you start, if you don't want get machine to `suspended, failed, pending/stuck etc`, at provider node. plz run this.
+> Do this before you start, if you don't want get machine to `suspended, failed, pending/stuck etc`, at provider node. plz run this. Read docs NodeOps
 
-- Following for using **UFW firewall+upgrade kernel & port**, command this into ssh-terminal will redetect for system Ubuntu 20-22-24**
+- The machine will be rejected if: **(1)** It runs workloads in addition to the NodeOps Network assigned loads **(2)** If SWAP is enabled
+- Following for using **UFW firewall-upgrade kernel-port**, command this into ssh-terminal that'll redetect any system Ubuntu 20-22-24
 
 ```
 sudo apt update -y && sudo apt upgrade -y && \
@@ -62,7 +63,7 @@ sudo ufw reload && \
 sudo ufw status verbose
 ```
 
-> check up to date of **kernel adn ufw status**
+> check up to date of **kernel and ufw status**
 ```diff
 - command
 - sudo uname -r
@@ -81,20 +82,20 @@ sudo ufw status verbose
 - Need some ETH testnet go to [bridge official](https://bridge.arbitrum.io/?destinationChain=arbitrum-sepolia&sourceChain=sepolia) Sepolia ETH or googling faucet
 - Change RPC network for ARB Sepolia ETH, use it `https://arbitrum-sepolia.drpc.org`
 
-## 2. Installation - Run Atlas Network Node
-**1. Atlas Provider Dashboard**
+## 2. Installation
+**1. NodeOps Provider Dashboard**
 
-- I appreciate to `SIGNUP ACCOUNT` through my link click... [![Dashboard](https://img.shields.io/badge/HERE-DASHBOARD-8a2be2)](https://testnet.nodeops.network/refer/mPaVx04)
-- Complete go to faucet & focus on task node run **provider machine** and **add machine** to other take action
-- For provider is here https://testnet-providers.atlasnetwork.xyz/ go to add machine
+- I appreciate to `SIGNUP ACCOUNT` through my link here.. [![Dashboard](https://img.shields.io/badge/SIGNUP-DASHBOARD-8a2be2)](https://testnet.nodeops.network/refer/mPaVx04)
+- Complete go to faucet & focus on task node run **provider machine** and **add machine** to other task action
+- For provider is here https://testnet-providers.nodeops.network/ go to add machine
 - Plz, if you first time `add 1 machine`
 - Setup provider > staking > sign transaction > copy command to your terminal ssh
-- If having many **failed tx** try tomorrow or try a fresh wallet with the first **SIGNUP** again & clear cache/cookies Atlas only
+- If having many **failed tx** try tomorrow or try a fresh wallet with the first **SIGNUP** again & clear cache/cookies NodeOps only
 
 **2. Run the Command**
 ```diff
 - This example cmd
-- Copy command after the success sign-tx, into your terminal ssh
+- Copy command from the website after the success sign-tx/id, ex: like here
 > curl -L https://get.atlasnetwork.dev | sh -s - xWm9nyjUy6KpZaJOHEFehVtvbut0QxFCx5GTF4pCXzsojhdN3bRZjktL41d47AAP
 ```
 - Go back to `provider-dashboard` for a view step like ![Step](https://img.shields.io/badge/CONFIGURING-brown) .. ![Step](https://img.shields.io/badge/AWAITING_STAKE-brown) ... ![Step](https://img.shields.io/badge/ACTIVE-brightgreen)
@@ -104,7 +105,7 @@ sudo ufw status verbose
 ![Testnet Node - Full Guides cover (4)](https://github.com/user-attachments/assets/65ce470a-8568-4a7f-a8fc-4081900cc12e)
 
 ## 3. Verifying Task & Status Running
-**1. Atlas Main-Dashboard**
+**1. NodeOps Main-Dashboard**
 
 `Go Back to main-dashboard for a complete task`
 
@@ -115,7 +116,7 @@ sudo ufw status verbose
 
 `Search machine details and workloads uptime`
 
-- To search for a `machine name` anyone can copy/paste the SIGN address wallet into https://explorer.atlasnetwork.xyz/machine
+- To search for active `machine name` can copy/paste the address wallet into https://explorer.nodeops.network/machine
 - Uptime : last checked : less than a minute ago ; **GOOD (100%)** The overall health of your machine is good, you've had zero errors in the last 24 hours.
 
 ![Desktop-screenshot-02-13-2025_12_54_AM](https://github.com/user-attachments/assets/3f2bc7f7-dcef-42c8-8b35-a96f45cde233)
@@ -133,6 +134,9 @@ sudo systemctl status atlasnetwork-provider.service
 ```
 sudo journalctl -u atlasnetwork-provider.service
 ```
+```
+sudo journalctl -u atlasnetwork-provider.service --no-pager --lines=50
+```
 - Check info Restart Atlas
 ```
 sudo systemctl restart atlasnetwork-provider.service
@@ -142,13 +146,13 @@ sudo systemctl restart atlasnetwork-provider.service
 ```
 sudo systemctl stop atlasnetwork-provider.service
 ```
-- Check **warning** for delete/stop/clean/update service Atlas
+- So, **warning** for delete/stop/clean/update service NodeOPS, but dont worry you can get fresh **(cleanup)**
 ```bash
 sudo systemctl stop atlasnetwork-provider.service && \
 sudo systemctl disable atlasnetwork-provider.service && \
 sudo rm -f /etc/systemd/system/atlasnetwork-provider.service && \
 sudo systemctl daemon-reload && \
 sudo rm -f /usr/local/bin/atlasnetwork-provider && \
-sudo rm -rf /etc/atlasnetwork /var/lib/atlasnetwork /root/.atlas-network && \
+sudo rm -rf /etc/atlasnetwork /var/lib/atlasnetwork && \
 sudo systemctl reset-failed
 ```
